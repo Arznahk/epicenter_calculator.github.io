@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>epicenter calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculate.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+</head>
+
+<body>
+    <h1>진원거리 계산기</h1>
+    <div id="grid">
+        <div id="students">
+            <h2>지진파 도착 시간 입력</h2>
+            <p>
+                *Test<br>
+                test
+            </p>
+          
+            <div>
+                ps시<input type="text" name="ps시" class="number" id="ps" value="0" placeholder="ps시"
+                    onchange="numberChanged();">
+                p파 속도<input type="text" name="p파 속도" class="number" id="pSpeed" value="0" placeholder="p파 속도"
+                    onchange="numberChanged();">
+                s파 속도<input type="text" name="s파 속도" class="number" id="sSpeed" value="0" placeholder="s파 속도"
+                    onchange="numberChanged();">
+            </div>
+
+            <input type="button" name="calculate" id="calculate" value="calculate" onclick="inputData();">
+
+            <div id="indicator">
+                진원거리: 0 <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
