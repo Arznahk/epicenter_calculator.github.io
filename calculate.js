@@ -36,7 +36,8 @@ function numberChanged(){
 
 
 function indicateValue(){
-   let value = calculate(); document.getElementById('indicator').innerHTML = 
+   let value = calculate(); 
+document.getElementById('indicator').innerHTML = 
     "진원거리: " + value;
 }
 
