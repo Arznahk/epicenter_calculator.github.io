@@ -54,13 +54,9 @@ function inputData() {
 }
 
 
-document.getElementById('pSlider').oninput = function() {
+function slide() {
     document.getElementById('pSpeed').value = document.getElementById('pSlider').value;
-}
-
-document.getElementById('sSlider').oninput = function() {
     document.getElementById('sSpeed').value = document.getElementById('sSlider').value;
 }
-
 
 document.getElementById('indicator').innerHTML = "진원거리: " + "가나다라";
