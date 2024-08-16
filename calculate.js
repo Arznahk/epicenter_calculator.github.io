@@ -52,12 +52,12 @@ function inputData() {
     ps = document.getElementById('ps').value;
     pSpeed = document.getElementById('pSpeed').value;
     sSpeed = document.getElementById('sSpeed').value;
-    indicateValue(calculate());
+    indicateValue(calculate(););
 }
 
 
 function speedChanged(){
     document.getElementById('pSpeed').value = valueToInt('pSlider');
     document.getElementById('sSpeed').value = valueToInt('sSlider');
-    indicateValue(calculate());
+    indicateValue(calculate(););
 }
