@@ -63,4 +63,4 @@ function speedChanged(){
 }
 
 
-    document.getElementById('indicator').innerHTML = "진원거리: " + "가나다라";
+document.getElementById('indicator').innerHTML = "진원거리: " + "가나다라";
