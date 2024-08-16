@@ -1,6 +1,7 @@
 let ps = 0;
 let pSpeed = 8;
 let sSpeed = 4;
+let result = 0;
 
 function valueCheck(id, min, max){
     if(isNaN(valueToInt(id)) == true){
@@ -36,14 +37,13 @@ function numberChanged(){
 
 
 function indicateValue(){
-    let value = calculate(); 
-    document.getElementById('indicator').innerHTML = "진원거리: " + value;
+    document.getElementById('indicator').innerHTML = "진원거리: " + result;
 }
 
 
 
 function calculate() = {
-    return (pSpeed*sSpeed)*ps/(pSpeed-sSpeed)
+    result = (pSpeed*sSpeed)*ps/(pSpeed-sSpeed);
 }
 
 
