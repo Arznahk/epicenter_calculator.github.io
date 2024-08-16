@@ -40,7 +40,7 @@ function indicateValue(){
 }
 
 function formula(){
-    document.getElementById('formula').innerHTML = ps + " = " + "d/" + sSpeed + " - " + "d/" + pSpeed + "<br>" + ps + " = " + "d*(" + pSpeed + " - " + sSpeed + ")/" + pSpeed + "*" + sSpeed + "<br>" + d + " = " + ps + "*(" + pSpeed + "*" + sSpeed + ")/" + pSpeed + " - " + sSpeed + "<br>" + d + " = " + ps*pSpeed*sSpeed + "/" + (pSpeed - sSpeed);
+    document.getElementById('formula').innerHTML = (ps).toString + " = " + "d/" + (sSpeed).toString + " - " + "d/" + (pSpeed).toString + "<br>" + (ps).toString + " = " + "d*(" + (pSpeed).toString + " - " + (sSpeed).toString + ")/" + (pSpeed).toString + "*" + (sSpeed).toString + "<br>" + "d" + " = " + ps + "*(" + pSpeed + "*" + sSpeed + ")/" + pSpeed + " - " + sSpeed + "<br>" + "d" + " = " + ps*pSpeed*sSpeed + "/" + (pSpeed - sSpeed);
 }
 
 
