@@ -52,6 +52,7 @@ function inputData() {
     ps = document.getElementById('ps').value;
     pSpeed = document.getElementById('pSpeed').value;
     sSpeed = document.getElementById('sSpeed').value;
+    calculate();
     indicateValue();
 }
 
