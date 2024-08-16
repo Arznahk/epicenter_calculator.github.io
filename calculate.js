@@ -35,8 +35,8 @@ function numberChanged(){
 
 
 
-function indicateValue(value){
-    document.getElementById('indicator').innerHTML = 
+function indicateValue(){
+   let value = calculate(); document.getElementById('indicator').innerHTML = 
     "진원거리: " + value;
 }
 
@@ -52,12 +52,12 @@ function inputData() {
     ps = document.getElementById('ps').value;
     pSpeed = document.getElementById('pSpeed').value;
     sSpeed = document.getElementById('sSpeed').value;
-    indicateValue(calculate(););
+    indicateValue();
 }
 
 
 function speedChanged(){
     document.getElementById('pSpeed').value = valueToInt('pSlider');
     document.getElementById('sSpeed').value = valueToInt('sSlider');
-    indicateValue(calculate(););
+    indicateValue();
 }
