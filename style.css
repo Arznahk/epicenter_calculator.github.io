@@ -1,7 +1,9 @@
-button {
-    padding: 0px;
-    border: 0px;
-    height: 24px;
-    width: 24px;
-    background-color: transparent;
+.number {
+    width: 40px;
+    text-align: center;
+}
+
+input[type=text] {
+    border-width: 0px;
+    border-bottom-width: 1px;
 }
