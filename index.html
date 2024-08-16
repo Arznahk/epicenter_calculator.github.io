@@ -24,9 +24,9 @@
                 ps시<input type="text" name="ps시" class="number" id="ps" value="0" placeholder="ps시"
                     onchange="numberChanged();"><br>
                 p파 속도<input type="text" name="p파 속도" class="number" id="pSpeed" value="0" placeholder="p파 속도"
-                    onchange="numberChanged();"><input type="range" id="pSlider" min="5.0" max="8.0" step="0.1"><br>
+                    onchange="numberChanged();"><input type="range" id="pSlider" min="5.0" max="8.0" step="0.1" oninput="slide();"><br>
                 s파 속도<input type="text" name="s파 속도" class="number" id="sSpeed" value="0" placeholder="s파 속도"
-                    onchange="numberChanged();"><input type="range" id="sSlider" min="3.0" max="4.0" step="0.1"><br>
+                    onchange="numberChanged();"><input type="range" id="sSlider" min="3.0" max="4.0" step="0.1" oninput="slide();"><br>
             </div><br>
 
             <input type="button" name="calculate" id="calculate" value="calculate" onclick="inputData();">
