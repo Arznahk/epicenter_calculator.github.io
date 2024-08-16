@@ -29,6 +29,8 @@ function numberChanged(){
     valueCheck('ps', 0, Infinity);
     valueCheck('pSpeed', 5, 8);
     valueCheck('sSpeed', 3, 4);
+    document.getElementById('pSlider').value = document.getElementById('pSpeed').value;
+    document.getElementById('sSlider').value = document.getElementById('sSpeed').value;
 }
 
 
