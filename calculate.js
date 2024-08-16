@@ -29,9 +29,6 @@ function numberChanged(){
     valueCheck('ps', 0, Infinity);
     valueCheck('pSpeed', 5, 8);
     valueCheck('sSpeed', 3, 4);
-    document.getElementById('ps').value = valueToInt('ps');
-    document.getElementById('pSpeed').value = valueToInt('pSpeed');
-    document.getElementById('sSpeed').value = valueToInt('sSpeed');
 }
 
 
@@ -57,9 +54,9 @@ function inputData() {
 }
 
 
-function speedChanged(){
-    document.getElementById('pSpeed').value = valueToInt('pSlider');
-    document.getElementById('sSpeed').value = valueToInt('sSlider');
+function sliderChanged(){
+    document.getElementById('pSpeed').value = document.getElementById('pSlider');
+    document.getElementById('sSpeed').value = document.getElementById('sSlider');
     indicateValue();
 }
 
