@@ -60,5 +60,13 @@ function sliderChanged(){
     indicateValue();
 }
 
+document.getElementById('pSlider').oninput = function() {
+    document.getElementById('pSpeed').value = document.getElementById('pSlider');
+}
+
+document.getElementById('sSlider').oninput = function() {
+    document.getElementById('sSpeed').value = document.getElementById('sSlider');
+}
+
 
 document.getElementById('indicator').innerHTML = "진원거리: " + "가나다라";
