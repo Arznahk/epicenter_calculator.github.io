@@ -54,18 +54,12 @@ function inputData() {
 }
 
 
-function sliderChanged(){
-    document.getElementById('pSpeed').value = document.getElementById('pSlider');
-    document.getElementById('sSpeed').value = document.getElementById('sSlider');
-    indicateValue();
-}
-
 document.getElementById('pSlider').oninput = function() {
-    document.getElementById('pSpeed').value = document.getElementById('pSlider');
+    document.getElementById('pSpeed').value = document.getElementById('pSlider').value;
 }
 
 document.getElementById('sSlider').oninput = function() {
-    document.getElementById('sSpeed').value = document.getElementById('sSlider');
+    document.getElementById('sSpeed').value = document.getElementById('sSlider').value;
 }
 
 
