@@ -39,6 +39,9 @@ function indicateValue(){
     document.getElementById('indicator').innerHTML = "진원거리: " + result;
 }
 
+function formula(){
+    document.getElementById('formula').innerHTML = ps " = " + "d/" + sSpeed + " - " + "d/" + pSpeed + "<br>" + ps " = " + "d*(" + pSpeed + " - " + sSpeed + ")/" + pSpeed + "*" + sSpeed + "<br>" + d " = " + ps + "*(" + pSpeed + "*" + sSpeed + ")/" + pSpeed + " - " + sSpeed + "<br>" + d " = " + ps*pSpeed*sSpeed "/" + (pSpeed - sSpeed);
+}
 
 
 function calculate() {
