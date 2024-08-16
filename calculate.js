@@ -42,7 +42,7 @@ function indicateValue(){
 
 
 
-function calculate = {
+function calculate() = {
     return (pSpeed*sSpeed)*ps/(pSpeed-sSpeed)
 }
 
