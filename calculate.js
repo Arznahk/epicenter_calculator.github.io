@@ -61,3 +61,6 @@ function speedChanged(){
     document.getElementById('sSpeed').value = valueToInt('sSlider');
     indicateValue();
 }
+
+
+    document.getElementById('indicator').innerHTML = "진원거리: " + "가나다라";
