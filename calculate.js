@@ -56,6 +56,7 @@ function inputData() {
     sSpeed = document.getElementById('sSpeed').value;
     calculate();
     indicateValue();
+    formula();
 }
 
 
