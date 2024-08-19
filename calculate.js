@@ -89,6 +89,7 @@ function createExam() {
     document.getElementById('sSpeed').value = getRandom(3, 4);
     document.getElementById('ps').value = getRandom(1, 100);
     inputData();
+    calculate();
     if (result % 1 === 0) {
         numberChanged();
     } else {
