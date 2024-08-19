@@ -78,7 +78,7 @@ document.getElementById('indicator').innerHTML = "진원거리: " + "가나다�
 
 function getRandom(min, max) {
     const minCeiled = Math.ceil(min);
-    const minFloored = Math.floor(max);
+    const maxFloored = Math.floor(max);
     return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
 }
 
