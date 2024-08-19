@@ -46,7 +46,7 @@ function indicateValue(){
 
 function formula(){
     if (exam) {
-    document.getElementById('formula').innerHTML = "?"
+        document.getElementById('formula').innerHTML = "?"
     } else {
         document.getElementById('formula').innerHTML = ps + " = " + "d/" + sSpeed + " - " + "d/" + pSpeed + "<br>" + ps + " = " + "d*(" + pSpeed + " - " + sSpeed + ")/" + pSpeed + "*" + sSpeed + "<br>" + "d" + " = " + ps + "*(" + pSpeed + "*" + sSpeed + ")/(" + pSpeed + " - " + sSpeed + ")<br>" + "d" + " = " + ps*pSpeed*sSpeed + "/" + (pSpeed - sSpeed) + " = " + result;
     }
