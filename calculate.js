@@ -88,9 +88,8 @@ function createExam() {
     document.getElementById('pSpeed').value = getRandom(5, 8);
     document.getElementById('sSpeed').value = getRandom(3, 4);
     document.getElementById('ps').value = getRandom(1, 100);
-    calculate();
+    inputData();
     if (result % 1 === 0) {
-        inputData();
         numberChanged();
     } else {
         createExam();
