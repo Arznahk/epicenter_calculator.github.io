@@ -92,8 +92,7 @@ function createExam() {
     if (result % 1 != 0) {
         createExam();
     } else {
-        indicateValue();
-        formula();
+        inputData();
         numberChanged();
     }
 }
