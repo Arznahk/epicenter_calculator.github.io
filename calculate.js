@@ -94,6 +94,7 @@ function createExam() {
     } else {
         indicateValue();
         formula();
+        numberChanged();
     }
 }
 
