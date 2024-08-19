@@ -89,11 +89,11 @@ function createExam() {
     document.getElementById('sSpeed').value = getRandom(3, 4);
     document.getElementById('ps').value = getRandom(1, 100);
     calculate();
-    if (result % 1 != 0) {
-        createExam();
-    } else {
+    if (result % 1 === 0) {
         inputData();
         numberChanged();
+    } else {
+        createExam();
     }
 }
 
