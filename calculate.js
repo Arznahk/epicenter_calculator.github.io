@@ -2,6 +2,7 @@ let ps = 0;
 let pSpeed = 8;
 let sSpeed = 4;
 let result = 0;
+let exam = false;
 
 function valueCheck(id, min, max){
     if(isNaN(valueToInt(id)) == true){
@@ -36,11 +37,19 @@ function numberChanged(){
 
 
 function indicateValue(){
-    document.getElementById('indicator').innerHTML = "진원거리: " + result + "km";
+    if (exam) {
+        document.getElementById('indicator').innerHTML = "진원거리: ?km";
+    } else {
+        document.getElementById('indicator').innerHTML = "진원거리: " + result + "km";
+    }
 }
 
 function formula(){
-    document.getElementById('formula').innerHTML = ps + " = " + "d/" + sSpeed + " - " + "d/" + pSpeed + "<br>" + ps + " = " + "d*(" + pSpeed + " - " + sSpeed + ")/" + pSpeed + "*" + sSpeed + "<br>" + "d" + " = " + ps + "*(" + pSpeed + "*" + sSpeed + ")/(" + pSpeed + " - " + sSpeed + ")<br>" + "d" + " = " + ps*pSpeed*sSpeed + "/" + (pSpeed - sSpeed) + " = " + result;
+    if (exam) {
+    document.getElementById('formula').innerHTML = "?"
+    } else {
+        document.getElementById('formula').innerHTML = ps + " = " + "d/" + sSpeed + " - " + "d/" + pSpeed + "<br>" + ps + " = " + "d*(" + pSpeed + " - " + sSpeed + ")/" + pSpeed + "*" + sSpeed + "<br>" + "d" + " = " + ps + "*(" + pSpeed + "*" + sSpeed + ")/(" + pSpeed + " - " + sSpeed + ")<br>" + "d" + " = " + ps*pSpeed*sSpeed + "/" + (pSpeed - sSpeed) + " = " + result;
+    }
 }
 
 
@@ -66,3 +75,31 @@ function slide() {
 }
 
 document.getElementById('indicator').innerHTML = "진원거리: " + "가나다라";
+
+function getRandom(min, max) {
+    const minCeiled = Math.ceil(min);
+    const minFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+}
+
+
+function createExam() {
+    exam = true;
+    document.getElementById('pSpeed').value = getRandom(5, 8);
+    document.getElementById('sSpeed').value = getRandom(3, 4);
+    document.getElementById('ps').value = Math.round(getRandom(1, 100));
+    calculate();
+    if (calculate % 1 != 0) {
+        createExam();
+    } else {
+        indicateValue();
+        formula();
+    }
+}
+
+function showAnswer(){
+    exam = false;
+    indicateValue();
+    formula();
+}
+
